@@ -6,7 +6,8 @@ import {
   Outlet,
 } from "react-router-dom";
 import './index.css'
-import App from './App.jsx'
+import App from './App.jsx';
+import Contact from './Contact.jsx';
 import PageError from "./PageError.jsx";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/Contact",
-        Component: App,
+        Component: Contact,
       },
       {
         path: "/Projects",

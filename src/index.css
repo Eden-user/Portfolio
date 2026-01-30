@@ -23,7 +23,7 @@ html,
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a:hover {
@@ -62,7 +62,7 @@ button {
 }
 
 p {
-  padding: 2px 30px;
+  padding: 2px 60px;
 }
 
 .pres {
@@ -181,7 +181,7 @@ ul {
 
 .totheleft {
   text-align: left;
-  padding: 5px 50px;
+  padding: 5px 100px;
 }
 
 .teaser {
