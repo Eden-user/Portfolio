@@ -1,0 +1,136 @@
+:root {
+  font-family: Space Grotesk;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100%;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  font-family: Revalia;
+  color: #209f55;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #44c076;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 0.8;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: Revalia;
+}
+
+button {
+  font-family: Space Grotesk;
+}
+
+.pres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 30%;
+  background: linear-gradient(45deg, #064e23, rgb(0, 0, 0));
+  border-radius: 5% 100%;
+
+}
+
+img {
+  max-width: 100%;
+  border-radius: 70% 5%;
+  border-width: 2px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #064e23;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #147a06;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.header {
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  align-content: center;
+
+}
+
+.header p {
+  font-size: 1.3rem;
+}
+
+nav {
+  width: 50%;
+  margin-right: 20px;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+}
