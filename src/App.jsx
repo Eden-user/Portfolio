@@ -1,5 +1,6 @@
 import Links from './Links.jsx';
 import Image from "./Image.jsx";
+import ProjectsPreview from './Projects-preview.jsx';
 import { NavLink } from 'react-router-dom';
 
 function App() {
@@ -22,14 +23,11 @@ function App() {
       <div className='inline'><p>I'm actually looking for an 8-week internship! If you'll have me you're very welcome to contact me</p>
       <button className='contact'><a href="/Contact" className='text-link'>Right here !</a></button></div>
       <h3 className='totheleft'>Here's a preview of my recent projects</h3>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <p>If you want to see more of them <NavLink to="/Projects">click here</NavLink>.</p>
+      <br/>
+      <ProjectsPreview/>
+      <br/>
+      <p>If you want to see all of them <NavLink to="/Projects">click here</NavLink>.</p>
+      <br/>
       <p>And if you're <s>nosy</s> curious about me, <NavLink to="/About">check this out</NavLink>, you won't regret it (I hope).</p>
       <p className='teaser'><s>!!!Teaser!!! A cute little game will pop here anytime. Soon. I hope. !!!Teaser!!!</s></p>
     </>

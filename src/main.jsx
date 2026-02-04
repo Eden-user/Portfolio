@@ -7,10 +7,12 @@ import {
 } from "react-router-dom";
 import './index.css'
 import App from './App.jsx';
-import Contact from './Contact.jsx';
+// import Contact from './Contact.jsx';
 import PageError from "./PageError.jsx";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
+import Projects from "./Projects.jsx";
+import ProjectDetail from "./ProjectDetail.jsx";
 
 function Layout() {
   return (
@@ -36,17 +38,17 @@ const router = createBrowserRouter([
         path: "/About",
         Component: App,
       },
-      {
-        path: "/Contact",
-        Component: Contact,
-      },
+      // {
+      //   path: "/Contact",
+      //   Component: Contact,
+      // },
       {
         path: "/Projects",
-        Component: App,
+        Component: Projects,
       },
       {
-        path: "/Projects/Magellan",
-        Component: App,
+        path: "/Project/:projectId",
+        Component: ProjectDetail,
       }]
   }
 ]);

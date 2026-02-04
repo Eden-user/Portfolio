@@ -31,11 +31,11 @@ function Nav() {
             About me
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/Contact" className="navlink" onClick={() => setIsOpen(false)}>
             Contact
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

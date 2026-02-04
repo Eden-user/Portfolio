@@ -85,7 +85,7 @@ p {
 
 }
 
-img {
+.meh {
   max-width: 100%;
   border-radius: 70% 5%;
   border-width: 2px;
@@ -186,6 +186,21 @@ ul {
 
 .teaser {
   text-align: center;
+}
+
+.git-link {
+  margin: auto;
+}
+
+.project-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-img {
+  max-width: 40vw;
+  margin: 20px 0px;
 }
 
 .footer {
