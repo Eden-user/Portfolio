@@ -3,12 +3,14 @@ import { NavLink } from "react-router-dom";
 
 function ProjectsStructure({ title, shortdescription, sneakpeek, link }) {
     return (
-        <>
+        <div className="prev-project">
             <h3>{title}</h3>
-            <img className="project-img" src={getImageUrl(sneakpeek)} alt={title} />
+            <div className="prev-img">
+                <img className="project-img-prev" src={getImageUrl(sneakpeek)} alt={title} />
+            </div>
             <p className="project-prev-desc">{shortdescription}</p>
-            <NavLink to={link}>See more</NavLink>
-        </>
+            <NavLink to={link} className="project-link">See more</NavLink>
+        </div>
     )
 }
 

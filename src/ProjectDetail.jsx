@@ -16,16 +16,18 @@ function ProjectDetail() {
     return (
         <div className="project-detail">
             <h1>{project.title}</h1>
+            <br />
             {project.githubLink && (
-                <a href={project.githubLink} target="_blank" className='git-link'>See the code</a>
+                <a href={project.githubLink} target="_blank" className='git'>See the code</a>
             )}
             <div className='project-imgs'>
-            <img className="project-img" src={getImageUrl(project.img)} alt={project.title + "-img"} />
-            <img className="project-img" src={getImageUrl(project.img2)} alt={project.title + "-img2"} />
+                {project.img.map((element, i) => (
+                    <img key={i} className='project-img' src={getImageUrl(element)} alt={project.title + "-img" + i} />
+                ))}
             </div>
             {project.technologies && (
                 <div>
-                    <h3>Technologies :</h3>
+                    <h3>Technologies</h3>
                     <ul className='tech-list'>
                         {project.technologies.map((tech, i) => (
                             <li key={i}>{tech}</li>
@@ -34,9 +36,8 @@ function ProjectDetail() {
                 </div>
             )}
             <div className='longDesc'>{project.longDesc}</div>
-
             {project.githubLink && (
-                <a href={project.githubLink} target="_blank" className='git-link'>See the code</a>
+                <a href={project.githubLink} target="_blank" className="git">See the code</a>
             )}
         </div>
     );
