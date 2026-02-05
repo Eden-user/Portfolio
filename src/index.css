@@ -255,6 +255,27 @@ ul {
   height: 80px;
 }
 
+.about-collapsibles {
+  padding: 20px;
+}
+
+.collapsible {
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+}
+
+.active, .collapsible:hover {
+  background-color: #093104;
+}
+
+.content {
+  padding: 0 20px;
+  overflow: hidden;
+}
+
 .footer {
   width: 100%;
   text-align: center;

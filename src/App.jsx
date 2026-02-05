@@ -29,7 +29,7 @@ function App() {
       <br />
       <p>If you want to see all of them <NavLink to="/Projects">click here</NavLink>.</p>
       <br />
-      <p>And if you're <s>nosy</s> curious about me, <NavLink to="/About">check this out</NavLink>, you won't regret it (I hope).</p>
+      {/* <p>And if you're <s>nosy</s> curious about me, <NavLink to="/About">check this out</NavLink>, you won't regret it (I hope).</p> */}
       <p className='teaser'><s>!!!Teaser!!! A cute little game will pop here anytime. Soon. I hope. !!!Teaser!!!</s></p>
     </>
   )
