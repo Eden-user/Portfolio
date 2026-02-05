@@ -126,9 +126,28 @@ button:focus-visible {
   font-size: 1.3rem;
 }
 
+.logo {
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #f9f9f9;
+}
+
+.logo:active {
+  background-color: transparent;
+}
+
+.logo:hover {
+  background-color: transparent;
+  color: #f9f9f9;
+}
+
 nav {
-  width: 60%;
-  margin: 20px 5%;
+  width: 20%;
+  margin: 20px 10%;
+}
+
+nav a {
+  font-size: 1.25em;
 }
 
 ul {
@@ -188,7 +207,8 @@ ul {
   text-align: center;
 }
 
-.git, .project-link {
+.git,
+.project-link {
   padding: 15px 120px;
 }
 
@@ -267,7 +287,7 @@ ul {
   text-align: left;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   background-color: #093104;
 }
 
@@ -286,7 +306,12 @@ ul {
 
   p,
   .pres {
-    line-height: 2.5;
+    line-height: 1.8;
+    padding: 2px 30px;
+  }
+
+  h1 {
+    font-size: 2.5em;
   }
 
   .header {
@@ -333,7 +358,7 @@ ul {
     right: 2.5%;
     background-color: #1a1a1a;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 95%;
     padding: 5px 5px;
     border-radius: 8px;
@@ -360,6 +385,66 @@ ul {
 
   .contact {
     margin-bottom: 20px;
+  }
+
+  .totheleft {
+    padding: 5px 50px;
+  }
+
+  .comment {
+    padding: 0 60px;
+  }
+
+  .project-img-prev {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .allprojects-prev {
+    flex-direction: column;
+  }
+
+  .prev-project {
+    max-width: none;
+  }
+
+  .prev-project h3 {
+    height: auto;
+  }
+
+  .project-img-prev {
+    max-width: 90vw;
+  }
+
+  .project-prev-desc {
+    max-width: none;
+    height: auto;
+  }
+
+  .project-imgs {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .project-img {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .tech-list {
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: auto;
+  }
+
+  .tech-list li {
+    padding: 0 5px;
+  }
+
+  .img-text {
+    max-width: 60vw;
+    margin-left: 20%;
   }
 }
 

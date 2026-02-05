@@ -6,7 +6,7 @@ function ProjectsStructure({ title, shortdescription, sneakpeek, link }) {
         <div className="prev-project">
             <h3>{title}</h3>
             <div className="prev-img">
-                <img className="project-img-prev" src={getImageUrl(sneakpeek)} alt={title} />
+                <img className="project-img-prev" src={getImageUrl(sneakpeek)} alt={title} loading="lazy"/>
             </div>
             <p className="project-prev-desc">{shortdescription}</p>
             <NavLink to={link} className="project-link">See more</NavLink>
