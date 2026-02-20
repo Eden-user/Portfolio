@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <nav>
       <button
@@ -14,7 +14,7 @@ function Nav() {
         <span></span>
         <span></span>
       </button>
-      
+
       <ul className={`nav-links ${isOpen ? 'nav-open' : ''}`}>
         <li>
           <NavLink to="/" className="navlink" onClick={() => setIsOpen(false)}>
@@ -26,11 +26,11 @@ function Nav() {
             Projects
           </NavLink>
         </li>
-        {/* <li>
+        <li>
           <NavLink to="/About" className="navlink" onClick={() => setIsOpen(false)}>
             About me
           </NavLink>
-        </li> */}
+        </li>
         {/* <li>
           <NavLink to="/Contact" className="navlink" onClick={() => setIsOpen(false)}>
             Contact

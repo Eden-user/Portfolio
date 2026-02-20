@@ -18,7 +18,7 @@ import ProjectDetail from "./ProjectDetail.jsx";
 function Layout() {
   return (
     <>
-      <Header/>
+      <Header />
       <Outlet />
       <Footer />
     </>
@@ -35,10 +35,10 @@ const router = createBrowserRouter([
         path: "/",
         Component: App,
       },
-      // {
-      //   path: "/About",
-      //   Component: About,
-      // },
+      {
+        path: "/About",
+        Component: About,
+      },
       // {
       //   path: "/Contact",
       //   Component: Contact,
