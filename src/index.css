@@ -291,6 +291,7 @@ ul {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -309,6 +310,7 @@ ul {
   from {
     transform: scale(0.8);
   }
+
   to {
     transform: scale(1);
   }
@@ -338,7 +340,7 @@ ul {
     max-width: 95vw;
     max-height: 95vh;
   }
-  
+
   .lightbox-close {
     top: 10px;
     right: 10px;
@@ -373,19 +375,71 @@ ul {
   background-color: #093104;
 }
 
-.content #2 {
-  padding: 0 20px;
+.content {
+  padding: 0 2.5%;
   overflow: hidden;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: auto;
+  gap: 2%;
+  padding-bottom: 30px
 }
 
-.content #0 {
-  padding: 0 20px;
-  overflow: hidden;
+.about_date, .about_descr, .about_p, .about_title {
+  margin-bottom: 8px;
 }
 
-.content #1{
-  padding: 0 20px;
-  overflow: hidden;
+.about_descr {
+  padding-bottom: 15px;
+  font-size: large;
+}
+
+.about_date {
+  font-size: large;
+}
+
+.about_title {
+  font-family: Revalia;
+  font-size: larger;
+}
+
+.about_p {
+  padding: 0;
+}
+
+#title {
+  padding: 0;
+  text-decoration: underline;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin: 5px 0 10px 0;
+}
+
+.skill {
+  border-left: solid 0.1px white;
+  padding: 5px;
+}
+
+.language {
+  border-left: solid 0.1px white;
+  padding: 5px 10px;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  margin: 10px 0;
+}
+
+.about-element {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
+  padding: 20px;
+  width: 100%;
 }
 
 .footer {
