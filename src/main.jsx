@@ -8,7 +8,7 @@ import {
 import './index.css'
 import App from './App.jsx';
 import About from "./About.jsx";
-// import Contact from './Contact.jsx';
+import Contact from './Contact.jsx';
 import PageError from "./PageError.jsx";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
@@ -39,10 +39,10 @@ const router = createBrowserRouter([
         path: "/About",
         Component: About,
       },
-      // {
-      //   path: "/Contact",
-      //   Component: Contact,
-      // },
+      {
+         path: "/Contact",
+         Component: Contact,
+      },
       {
         path: "/Projects",
         Component: Projects,
