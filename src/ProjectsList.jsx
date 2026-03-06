@@ -4,7 +4,7 @@ export const ProjectsList = [
         id: "Magellan",
         title: "Interactive app - Magellan",
         desc: "Tablet app consisting of an SVG map and a digital book that interact with each other. Curious?",
-        img: ["./assets/Magellan1.png", "./assets/Magellan2.png"],
+        img: ["./assets/Magellan1.webp", "./assets/Magellan2.webp"],
         link: "/Project/Magellan",
         longDesc: (
             <>
@@ -12,7 +12,7 @@ export const ProjectsList = [
                 <p>This project was commissioned by La Compagnie de la Lanterne magique, an association that creates shows combining stories and magic. They are located in Clermont-Ferrand (France). Find out more about them <a href="https://www.compagnie-lanterne-magique.fr/" target="_blank">here</a>.</p>
                 <p>In this project, I had two main objectives. The first one was to design a world map that could be printed/projected on a large scale and that I could reuse later for the 2nd part of the project. I chose to do it in an SVG format for scalability.</p>
                 <p>Here’s an (old) pic of me next to the print of the map used for the show :p</p>
-                <img className="img-text" src={getImageUrl("./assets/Magellan3.jpg")} alt="pic of me next to a big print of the map" loading="lazy"/>
+                <img className="img-text" src={getImageUrl("./assets/Magellan3.webp")} alt="pic of me next to a big print of the map" loading="lazy"/>
                 <br/>
                 <h2>Let's talk tech</h2>
                 <p>The goal was to have the app running offline on an Android tablet to be displayed during an exhibition about Magellan’s travel around the world so that the public could interact with it. </p>
@@ -28,9 +28,9 @@ export const ProjectsList = [
         id: "STORG",
         title: "End-of-year project - STORG",
         desc: "File compression/decompression & transfer software.",
-        img: ["./assets/STORG1.png", "./assets/STORG2.png", "./assets/STORG3.png"],
+        img: ["./assets/STORG1.webp", "./assets/STORG2.webp", "./assets/STORG3.webp"],
         link: "/Project/STORG",
-        img2: "./assets/homepage_pic_me.jpg",
+        img2: "./assets/homepage_pic_me.webp",
         longDesc: (
             <>
                 <h2>About this project</h2>
