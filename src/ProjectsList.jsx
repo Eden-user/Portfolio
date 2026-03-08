@@ -12,8 +12,8 @@ export const ProjectsList = [
                 <p>This project was commissioned by La Compagnie de la Lanterne magique, an association that creates shows combining stories and magic. They are located in Clermont-Ferrand (France). Find out more about them <a href="https://www.compagnie-lanterne-magique.fr/" target="_blank">here</a>.</p>
                 <p>In this project, I had two main objectives. The first one was to design a world map that could be printed/projected on a large scale and that I could reuse later for the 2nd part of the project. I chose to do it in an SVG format for scalability.</p>
                 <p>Here’s an (old) pic of me next to the print of the map used for the show :p</p>
-                <img className="img-text" src={getImageUrl("./assets/Magellan3.webp")} alt="pic of me next to a big print of the map" loading="lazy"/>
-                <br/>
+                <img className="img-text" src={getImageUrl("./assets/Magellan3.webp")} alt="pic of me next to a big print of the map" loading="lazy" />
+                <br />
                 <h2>Let's talk tech</h2>
                 <p>The goal was to have the app running offline on an Android tablet to be displayed during an exhibition about Magellan’s travel around the world so that the public could interact with it. </p>
                 <p>The app consists of a digitalised version of the physical book (which is handwritten) you can leaf through thanks to the <a href="https://github.com/blasten/turn.js/" target="_blank">turn.js library</a>, and the SVG map, with the journey’s different landmarks linking to the related chapter in the book. There are different ways to access the book: from the beginning, by selecting a chapter, or by selecting a theme (an animal, a plant, a place, a character, etc.). </p>
@@ -30,7 +30,6 @@ export const ProjectsList = [
         desc: "File compression/decompression & transfer software.",
         img: ["./assets/STORG1.webp", "./assets/STORG2.webp", "./assets/STORG3.webp"],
         link: "/Project/STORG",
-        img2: "./assets/homepage_pic_me.webp",
         longDesc: (
             <>
                 <h2>About this project</h2>
@@ -45,6 +44,27 @@ export const ProjectsList = [
         githubLink: "https://github.com/Storg-Team",
         featured: true
     },
+    {
+        id: "Portfolio",
+        title: "This exact portfolio",
+        descr: "A nice website to show off my work (just to show off, basically).",
+        img: ["./assets/Portfolio1.webp"],
+        link: "/Project/Portfolio",
+        longDesc: (
+            <>
+                <h2>About this project</h2>
+                <p>I've been wanting to make myself a website since I first encountered the glorious language commonly known as HTML. But then, in January 2026, I discovered React, and it just made sense to create my website using it.</p>
+                <p>So I got started on it, and I discovered its specifics as I went, each day more amazed than the previous one by the possibilities it offers.</p>
+                <p>If you check out the code, you'll see I'm passionate about mapping JavaScript arrays (a method I also excessively use in the Magellan project).</p>
+                <p>I'm having a lot of fun with this project, as you may have noticed if you've browsed a bit through it, and I intend to continually develop it into a monstruous goofy creature while trying to remain a bit professional.</p>
+            </>
+        ),
+        technologies: ["React", "Node.js", "HTML", "JS", "CSS"],
+        githubLink: "https://github.com/Eden-user/Portfolio",
+        featured: false
+    },
+    {
+    }
 ];
 export function getImageUrl(path) {
     return images[path]?.default;
