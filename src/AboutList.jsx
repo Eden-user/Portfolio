@@ -25,7 +25,7 @@ export const Content = [
                 skills: ["critical thinking", "writing skills", "analytical thinking", "French", "English", "Ancient Greek", "Latin"]
             },
             {
-                title: "Other studies diplomas qnd skills",
+                title: "Other studies diplomas and skills",
                 skills: [
                     
                     "Baccalauréat (HLP, HGGSP, LLCER, Latin option), High Distinction. Lycée Jules Renard, Nevers. 2018 - 2021",

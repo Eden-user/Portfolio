@@ -218,13 +218,31 @@ ul {
 
 .git,
 .project-link {
-  padding: 15px 120px;
+  padding: 15px 70px;
 }
 
 .tech-list {
   list-style: none;
   display: flex;
   padding: 20px 180px;
+  justify-content: space-evenly;
+}
+
+.tech-list li {
+  padding: 0 5px;
+  width: fit-content;
+}
+
+strong {
+  font-size: large;
+}
+
+.tech-list li p {
+  width: 35vw;
+}
+
+.feat-list {
+  padding-left: 3%;
 }
 
 .longDesc h2 {
@@ -268,9 +286,17 @@ ul {
   display: block;
 }
 
+video {
+  width: 24%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
 /* Images normales */
 .project-img {
   max-width: 40vw;
+  max-height: 30vw;
   margin: 20px auto;
   display: block;
   cursor: pointer;
@@ -391,10 +417,13 @@ ul {
   grid-template-columns: 48% 48%;
   grid-template-rows: auto;
   gap: 2%;
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 
-.about_date, .about_descr, .about_p, .about_title {
+.about_date,
+.about_descr,
+.about_p,
+.about_title {
   margin-bottom: 8px;
 }
 
@@ -469,12 +498,16 @@ ul {
 
   h1 {
     font-size: 2.5em;
+    padding: 0 5px;
   }
 
   .header {
     width: 100%;
     margin: auto;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #242424;
   }
 
   nav {
@@ -522,6 +555,7 @@ ul {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     z-index: 9999;
     gap: 0;
+    font-size: small;
   }
 
   .nav-links.nav-open {
@@ -552,11 +586,6 @@ ul {
     padding: 0 60px;
   }
 
-  .project-img-prev {
-    height: auto;
-    padding: 10px 0;
-  }
-
   .allprojects-prev {
     flex-direction: column;
   }
@@ -571,6 +600,9 @@ ul {
 
   .project-img-prev {
     max-width: 90vw;
+    max-height: 30vh;
+    height: auto;
+    padding: 10px 0;
   }
 
   .project-prev-desc {
@@ -585,23 +617,45 @@ ul {
 
   .project-img {
     max-width: 80vw;
+    max-height: 40vh;
     margin: auto;
+    margin-bottom: 10px;
+  }
+
+  video {
+    margin: auto;
+    width: 60%;
+    height: auto;
   }
 
   .tech-list {
     padding: 20px;
     flex-wrap: wrap;
-    max-width: 80vw;
+    width: fit-content;
     margin: auto;
   }
 
   .tech-list li {
     padding: 0 5px;
+    width: fit-content;
+  }
+
+  .tech-list li p {
+    width: auto;
   }
 
   .img-text {
     max-width: 60vw;
     margin-left: 20%;
+  }
+
+  .content {
+    grid-template-columns: 100%;
+    gap: 0;
+  }
+
+  .about_art {
+    font-size: xx-small;
   }
 }
 

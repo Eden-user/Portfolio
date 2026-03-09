@@ -1,4 +1,4 @@
-const images = import.meta.glob('./assets/*.{jpg,png,jpeg,webp}', { eager: true });
+const images = import.meta.glob('./assets/*.{jpg,png,jpeg,webp,mov}', { eager: true });
 export const ProjectsList = [
     {
         id: "Magellan",
@@ -64,8 +64,47 @@ export const ProjectsList = [
         featured: false
     },
     {
+        id: "FlappyBirb",
+        title: "Flappy Birb - jeu Pygame",
+        descr: "A simple game inspired by Flappy Bird where the player controls a bird that must avoid pipes by flying. The game includes a score system, a start menu, and a game over screen.",
+        img: ["./assets/BirbP2.webp", "./assets/BirbP.webp"],
+        video: "./assets/BirbV.mov",
+        link: "/Project/FlappyBirb",
+        longDesc: (
+            <>
+                <h2>About</h2>
+                <p>A simple game inspired by the mobile game Flappy Bird where the player controls a bird that must avoid pipes by flying.</p>
+                <div className="tech-list">
+                    <li><p><strong>Features</strong></p>
+                        <div className="feat-list">
+                            <p>Start menu</p>
+                            <p>Keyboard control (SPACE to jump e.g.)</p>
+                            <p>Procedural obstacle generation</p>
+                            <p>Score system</p>
+                            <p>Collision detection</p>
+                            <p>Game over screen with restart option</p>
+                            <p>Simple physics (gravity, velocity)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p><strong>Applied Concepts</strong></p>
+                        <div className="feat-list">
+                            <p>Object-oriented programming: game entity management</p>
+                            <p>Game loop: 60 FPS game loop</p>
+                            <p>Simple physics: gravity and velocity</p>
+                            <p>Procedural generation: random obstacle creation</p>
+                        </div>
+                    </li>
+                </div>
+            </>
+        ),
+        technologies: ["Python", "Pygame"],
+        githubLink: "https://github.com/Eden-user/Portfolio-Bachelor/tree/comp%C3%A9tences/B1/Jeu_python",
+        featured: false,
+        mobile: true
     }
 ];
+
 export function getImageUrl(path) {
     return images[path]?.default;
 }

@@ -34,6 +34,9 @@ function ProjectDetail() {
                         style={{ cursor: 'pointer' }}
                     />
                 ))}
+                {project.video && (
+                    <video src={getImageUrl(project.video)} className='projet-img' controls/>
+                )}
             </div>
             
             {/* Lightbox overlay */}
