@@ -39,6 +39,13 @@ export const Content = [
         button: "My work experiences",
         content: [
             {
+                date: "March 2026 - June 2026",
+                title: "Web Developer Intern",
+                descr: "Hashbang / Le Bureau, Lyon",
+                skills: ["Web developpement using the framework Django and the CMS Wagtail"],
+                IT: true
+            },
+            {
                 date: "August 2025 - today",
                 title: "My sole-trader business",
                 descr: "I develop websites for small businesses and associations, as well as custom orders such as the Magellan project.",
